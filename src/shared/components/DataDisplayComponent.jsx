@@ -2,8 +2,8 @@ import React from 'react';
 import useFetch from '../hooks/useFetch';
 import GraphComponent from './GraphComponent';
 
-const DataDisplayComponent = () => {
-  const { data, loading, error } = useFetch('https://poe-functions-test.azurewebsites.net/api/GetCurrency');
+const DataDisplayComponent = ({ url, maxSize, graphTitle }) => {
+  const { data, loading, error } = useFetch(url);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
@@ -29,8 +29,8 @@ const DataDisplayComponent = () => {
 
   return (
     <div>
-      <h2>Currency Stack Sizes:</h2>
-      <GraphComponent graphData={graphData} />
+      <h2>{graphTitle}</h2>
+      <GraphComponent graphData={graphData} maxSize={maxSize} />
     </div>
   );
 };

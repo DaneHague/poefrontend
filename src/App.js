@@ -4,6 +4,7 @@ import { HashRouter as Router, Route, Switch, Routes } from 'react-router-dom';
 import HomePage from './features/home/HomePage';
 import CurrencyPage from './features/currency/CurrencyPage';
 import NavBar from './features/navbar/NavBar';
+import EssencePage from './features/essence/EssencePage';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/Home" element={<HomePage />} />
         <Route path="/Currency" element={<CurrencyPage />} />
+        <Route path="/Essence" element={<EssencePage />} />
       </Routes>
     </Router>
     </>

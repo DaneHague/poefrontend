@@ -4,8 +4,7 @@ import DataDisplayComponent from "../../shared/components/DataDisplayComponent";
 const CurrencyPage = () => {
     return (
         <>
-        Currency Page!
-        <DataDisplayComponent />
+        <DataDisplayComponent url='https://poe-functions-test.azurewebsites.net/api/GetCurrency' maxSize={5000} graphTitle={'Currency:'} />
         </>
     )
     

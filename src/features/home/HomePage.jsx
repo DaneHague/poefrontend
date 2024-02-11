@@ -3,7 +3,7 @@ import React from "react";
 const HomePage = () => {
     return (
         <>
-        Home
+        Simple react app to display Path of Exile data
         </>
     )
 }

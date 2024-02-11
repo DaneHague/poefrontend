@@ -8,10 +8,10 @@ const NavBar = () => {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           My Application
         </Typography>
-        <Box sx={{ display: 'flex', flexDirection: 'row-reverse', flexGrow: 1 }}>
+        <Box sx={{ display: 'flex', flexGrow: 1 }}>
           <Button color="inherit" href="#Home">Home</Button>
           <Button color="inherit" href="#Currency">Currency</Button>
-          <Button color="inherit" href="#contact">Contact</Button>
+          <Button color="inherit" href="#Essence">Essence</Button>
         </Box>
       </Toolbar>
     </AppBar>
