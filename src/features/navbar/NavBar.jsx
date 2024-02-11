@@ -9,8 +9,8 @@ const NavBar = () => {
           My Application
         </Typography>
         <Box sx={{ display: 'flex', flexDirection: 'row-reverse', flexGrow: 1 }}>
-          <Button color="inherit" href="/Home">Home</Button>
-          <Button color="inherit" href="/Currency">Currency</Button>
+          <Button color="inherit" href="#Home">Home</Button>
+          <Button color="inherit" href="#Currency">Currency</Button>
           <Button color="inherit" href="#contact">Contact</Button>
         </Box>
       </Toolbar>
