@@ -14,7 +14,7 @@ const HomePage = () => {
                 <p>I have a function app hosted in Azure that pulls data from Path of Exile's API every hour.</p>
                 <p>I use Timer Triggers to pull the data on the hour and HttpTriggers to query the Redis cache.</p>
                 <p>It then stores the data in Cosmos and in Redis, Redis is hosted inside a K8 cluster in Azure.</p>
-                <p>I also use Azure devops for CI/CD</p>
+                <p>I also use Azure devops for CI/CD and all keys are secure in a Key Vault.</p>
                 <br />
                 <p>I use a myriad of technologies</p>
                 <ul>
