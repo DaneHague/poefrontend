@@ -10,9 +10,9 @@ const DataDisplayComponent = ({ url, maxSize, graphTitle }) => {
   if (!data) return <p>No data to display</p>;
 
   const transformedData = Object.keys(data).map(key => ({
-    name: data[key].Name,
-    stackSize: parseInt(data[key].StackSize, 10)
-  }));
+    name: data[key].name,
+    stackSize: parseInt(data[key].stackSize, 10)
+}));
 
   const graphData = {
     labels: transformedData.map(item => item.name),
